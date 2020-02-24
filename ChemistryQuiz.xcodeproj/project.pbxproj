@@ -3,19 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680A3118B500655DA54F3C8B /* Pods_ChemistryQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3425576A1AAF773D7C9BA6 /* Pods_ChemistryQuiz.framework */; };
+		CC29F35123422271007CE248 /* LeaderboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC29F35023422271007CE248 /* LeaderboardTableViewController.swift */; };
+		CC3D037B2347760600E79B83 /* AllQuestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D037A2347760600E79B83 /* AllQuestionsTableViewController.swift */; };
+		CC3D037D2347817D00E79B83 /* ExpandedAllQuestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D037C2347817D00E79B83 /* ExpandedAllQuestionsTableViewController.swift */; };
 		CC600D1E233BD13300766F6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC600D1D233BD13300766F6D /* AppDelegate.swift */; };
 		CC600D20233BD13300766F6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC600D1F233BD13300766F6D /* SceneDelegate.swift */; };
 		CC600D22233BD13300766F6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC600D21233BD13300766F6D /* ViewController.swift */; };
 		CC600D25233BD13300766F6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC600D23233BD13300766F6D /* Main.storyboard */; };
 		CC600D27233BD13500766F6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC600D26233BD13500766F6D /* Assets.xcassets */; };
 		CC600D2A233BD13500766F6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC600D28233BD13500766F6D /* LaunchScreen.storyboard */; };
+		CC600D32233BD28E00766F6D /* example-quiz.json in Resources */ = {isa = PBXBuildFile; fileRef = CC600D31233BD28E00766F6D /* example-quiz.json */; };
+		CC600D34233D42AF00766F6D /* Category1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC600D33233D42AF00766F6D /* Category1ViewController.swift */; };
+		CC717D0A23428B2F006079FF /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC717CF423428B2F006079FF /* IQTextView.swift */; };
+		CC717D0B23428B2F006079FF /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC717CF623428B2F006079FF /* IQPreviousNextView.swift */; };
+		CC717D0C23428B2F006079FF /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC717CF723428B2F006079FF /* IQTitleBarButtonItem.swift */; };
+		CC717D0D23428B2F006079FF /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC717CF823428B2F006079FF /* IQBarButtonItem.swift */; };
+		CC717D0E23428B2F006079FF /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC717CF923428B2F006079FF /* IQToolbar.swift */; };
+		CC717D0F23428B2F006079FF /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC717CFA23428B2F006079FF /* IQUIView+IQKeyboardToolbar.swift */; };
+		CC717D1023428B2F006079FF /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC717CFB23428B2F006079FF /* IQInvocation.swift */; };
+		CC717D1123428B2F006079FF /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC717CFD23428B2F006079FF /* IQKeyboardManagerConstantsInternal.swift */; };
+		CC717D1223428B2F006079FF /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC717CFE23428B2F006079FF /* IQKeyboardManagerConstants.swift */; };
+		CC717D1323428B2F006079FF /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CC717D0023428B2F006079FF /* IQKeyboardManager.bundle */; };
+		CC717D1423428B2F006079FF /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC717D0123428B2F006079FF /* IQKeyboardReturnKeyHandler.swift */; };
+		CC717D1523428B2F006079FF /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC717D0223428B2F006079FF /* IQKeyboardManager.swift */; };
+		CC717D1623428B2F006079FF /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC717D0523428B2F006079FF /* IQUIScrollView+Additions.swift */; };
+		CC717D1723428B2F006079FF /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC717D0623428B2F006079FF /* IQUIViewController+Additions.swift */; };
+		CC717D1823428B2F006079FF /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC717D0723428B2F006079FF /* IQUITextFieldView+Additions.swift */; };
+		CC717D1923428B2F006079FF /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC717D0823428B2F006079FF /* IQUIView+Hierarchy.swift */; };
+		CC717D1A23428B2F006079FF /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC717D0923428B2F006079FF /* IQNSArray+Sort.swift */; };
+		CC9CCCD0233E48170075CE5C /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9CCCCF233E48170075CE5C /* ResultsTableViewController.swift */; };
+		CC9CCCD2233E738F0075CE5C /* ExpandedResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9CCCD1233E738F0075CE5C /* ExpandedResultsViewController.swift */; };
+		CCE0993F23418960002D4A13 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE0993E23418960002D4A13 /* SummaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C65388357F997A73BB48A4C /* Pods-ChemistryQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChemistryQuiz.debug.xcconfig"; path = "Target Support Files/Pods-ChemistryQuiz/Pods-ChemistryQuiz.debug.xcconfig"; sourceTree = "<group>"; };
+		6373913C2249FEBC29769EA4 /* Pods-ChemistryQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChemistryQuiz.release.xcconfig"; path = "Target Support Files/Pods-ChemistryQuiz/Pods-ChemistryQuiz.release.xcconfig"; sourceTree = "<group>"; };
+		9A3425576A1AAF773D7C9BA6 /* Pods_ChemistryQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChemistryQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC29F35023422271007CE248 /* LeaderboardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewController.swift; sourceTree = "<group>"; };
+		CC3D037A2347760600E79B83 /* AllQuestionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllQuestionsTableViewController.swift; sourceTree = "<group>"; };
+		CC3D037C2347817D00E79B83 /* ExpandedAllQuestionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedAllQuestionsTableViewController.swift; sourceTree = "<group>"; };
 		CC600D1A233BD13300766F6D /* ChemistryQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChemistryQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC600D1D233BD13300766F6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC600D1F233BD13300766F6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +56,29 @@
 		CC600D26233BD13500766F6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC600D29233BD13500766F6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC600D2B233BD13500766F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC600D31233BD28E00766F6D /* example-quiz.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "example-quiz.json"; sourceTree = "<group>"; };
+		CC600D33233D42AF00766F6D /* Category1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category1ViewController.swift; sourceTree = "<group>"; };
+		CC717CF423428B2F006079FF /* IQTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTextView.swift; sourceTree = "<group>"; };
+		CC717CF623428B2F006079FF /* IQPreviousNextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQPreviousNextView.swift; sourceTree = "<group>"; };
+		CC717CF723428B2F006079FF /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		CC717CF823428B2F006079FF /* IQBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQBarButtonItem.swift; sourceTree = "<group>"; };
+		CC717CF923428B2F006079FF /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
+		CC717CFA23428B2F006079FF /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		CC717CFB23428B2F006079FF /* IQInvocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQInvocation.swift; sourceTree = "<group>"; };
+		CC717CFD23428B2F006079FF /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
+		CC717CFE23428B2F006079FF /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
+		CC717D0023428B2F006079FF /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		CC717D0123428B2F006079FF /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		CC717D0223428B2F006079FF /* IQKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQKeyboardManager.swift; sourceTree = "<group>"; };
+		CC717D0323428B2F006079FF /* IQKeyboardManagerSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerSwift.h; sourceTree = "<group>"; };
+		CC717D0523428B2F006079FF /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		CC717D0623428B2F006079FF /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		CC717D0723428B2F006079FF /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		CC717D0823428B2F006079FF /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		CC717D0923428B2F006079FF /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		CC9CCCCF233E48170075CE5C /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
+		CC9CCCD1233E738F0075CE5C /* ExpandedResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedResultsViewController.swift; sourceTree = "<group>"; };
+		CCE0993E23418960002D4A13 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +86,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				680A3118B500655DA54F3C8B /* Pods_ChemistryQuiz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2283E07EDB7D06E1AF102B15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C65388357F997A73BB48A4C /* Pods-ChemistryQuiz.debug.xcconfig */,
+				6373913C2249FEBC29769EA4 /* Pods-ChemistryQuiz.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B5499CFBEF5EDF5B764BB293 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A3425576A1AAF773D7C9BA6 /* Pods_ChemistryQuiz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CC600D11233BD13300766F6D = {
 			isa = PBXGroup;
 			children = (
 				CC600D1C233BD13300766F6D /* ChemistryQuiz */,
 				CC600D1B233BD13300766F6D /* Products */,
+				2283E07EDB7D06E1AF102B15 /* Pods */,
+				B5499CFBEF5EDF5B764BB293 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +133,87 @@
 			children = (
 				CC600D1D233BD13300766F6D /* AppDelegate.swift */,
 				CC600D1F233BD13300766F6D /* SceneDelegate.swift */,
+				CC717CF223428B2F006079FF /* IQKeyboardManagerSwift */,
 				CC600D21233BD13300766F6D /* ViewController.swift */,
 				CC600D23233BD13300766F6D /* Main.storyboard */,
+				CC3D037C2347817D00E79B83 /* ExpandedAllQuestionsTableViewController.swift */,
+				CC3D037A2347760600E79B83 /* AllQuestionsTableViewController.swift */,
+				CC29F35023422271007CE248 /* LeaderboardTableViewController.swift */,
+				CC9CCCD1233E738F0075CE5C /* ExpandedResultsViewController.swift */,
+				CCE0993E23418960002D4A13 /* SummaryViewController.swift */,
+				CC9CCCCF233E48170075CE5C /* ResultsTableViewController.swift */,
+				CC600D33233D42AF00766F6D /* Category1ViewController.swift */,
 				CC600D26233BD13500766F6D /* Assets.xcassets */,
 				CC600D28233BD13500766F6D /* LaunchScreen.storyboard */,
+				CC600D31233BD28E00766F6D /* example-quiz.json */,
 				CC600D2B233BD13500766F6D /* Info.plist */,
 			);
 			path = ChemistryQuiz;
+			sourceTree = "<group>";
+		};
+		CC717CF223428B2F006079FF /* IQKeyboardManagerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				CC717CF323428B2F006079FF /* IQTextView */,
+				CC717CF523428B2F006079FF /* IQToolbar */,
+				CC717CFC23428B2F006079FF /* Constants */,
+				CC717CFF23428B2F006079FF /* Resources */,
+				CC717D0123428B2F006079FF /* IQKeyboardReturnKeyHandler.swift */,
+				CC717D0223428B2F006079FF /* IQKeyboardManager.swift */,
+				CC717D0323428B2F006079FF /* IQKeyboardManagerSwift.h */,
+				CC717D0423428B2F006079FF /* Categories */,
+			);
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		CC717CF323428B2F006079FF /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				CC717CF423428B2F006079FF /* IQTextView.swift */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		CC717CF523428B2F006079FF /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				CC717CF623428B2F006079FF /* IQPreviousNextView.swift */,
+				CC717CF723428B2F006079FF /* IQTitleBarButtonItem.swift */,
+				CC717CF823428B2F006079FF /* IQBarButtonItem.swift */,
+				CC717CF923428B2F006079FF /* IQToolbar.swift */,
+				CC717CFA23428B2F006079FF /* IQUIView+IQKeyboardToolbar.swift */,
+				CC717CFB23428B2F006079FF /* IQInvocation.swift */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		CC717CFC23428B2F006079FF /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CC717CFD23428B2F006079FF /* IQKeyboardManagerConstantsInternal.swift */,
+				CC717CFE23428B2F006079FF /* IQKeyboardManagerConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		CC717CFF23428B2F006079FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC717D0023428B2F006079FF /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CC717D0423428B2F006079FF /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CC717D0523428B2F006079FF /* IQUIScrollView+Additions.swift */,
+				CC717D0623428B2F006079FF /* IQUIViewController+Additions.swift */,
+				CC717D0723428B2F006079FF /* IQUITextFieldView+Additions.swift */,
+				CC717D0823428B2F006079FF /* IQUIView+Hierarchy.swift */,
+				CC717D0923428B2F006079FF /* IQNSArray+Sort.swift */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC600D2E233BD13500766F6D /* Build configuration list for PBXNativeTarget "ChemistryQuiz" */;
 			buildPhases = (
+				A08468E711B87F6CF4D34DA5 /* [CP] Check Pods Manifest.lock */,
 				CC600D16233BD13300766F6D /* Sources */,
 				CC600D17233BD13300766F6D /* Frameworks */,
 				CC600D18233BD13300766F6D /* Resources */,
+				153CDFAB319DFCA673D722F7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +276,89 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC717D1323428B2F006079FF /* IQKeyboardManager.bundle in Resources */,
 				CC600D2A233BD13500766F6D /* LaunchScreen.storyboard in Resources */,
 				CC600D27233BD13500766F6D /* Assets.xcassets in Resources */,
 				CC600D25233BD13300766F6D /* Main.storyboard in Resources */,
+				CC600D32233BD28E00766F6D /* example-quiz.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		153CDFAB319DFCA673D722F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChemistryQuiz/Pods-ChemistryQuiz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChemistryQuiz/Pods-ChemistryQuiz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChemistryQuiz/Pods-ChemistryQuiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A08468E711B87F6CF4D34DA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChemistryQuiz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC600D16233BD13300766F6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC717D0F23428B2F006079FF /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				CC600D22233BD13300766F6D /* ViewController.swift in Sources */,
 				CC600D1E233BD13300766F6D /* AppDelegate.swift in Sources */,
+				CC717D1723428B2F006079FF /* IQUIViewController+Additions.swift in Sources */,
+				CC717D1123428B2F006079FF /* IQKeyboardManagerConstantsInternal.swift in Sources */,
+				CC717D0A23428B2F006079FF /* IQTextView.swift in Sources */,
+				CC717D0C23428B2F006079FF /* IQTitleBarButtonItem.swift in Sources */,
+				CC717D1923428B2F006079FF /* IQUIView+Hierarchy.swift in Sources */,
+				CC9CCCD2233E738F0075CE5C /* ExpandedResultsViewController.swift in Sources */,
+				CC29F35123422271007CE248 /* LeaderboardTableViewController.swift in Sources */,
+				CC717D1523428B2F006079FF /* IQKeyboardManager.swift in Sources */,
+				CC717D1423428B2F006079FF /* IQKeyboardReturnKeyHandler.swift in Sources */,
+				CC3D037D2347817D00E79B83 /* ExpandedAllQuestionsTableViewController.swift in Sources */,
+				CC3D037B2347760600E79B83 /* AllQuestionsTableViewController.swift in Sources */,
+				CC717D0D23428B2F006079FF /* IQBarButtonItem.swift in Sources */,
+				CC600D34233D42AF00766F6D /* Category1ViewController.swift in Sources */,
+				CC717D1223428B2F006079FF /* IQKeyboardManagerConstants.swift in Sources */,
+				CC717D1623428B2F006079FF /* IQUIScrollView+Additions.swift in Sources */,
+				CC717D1023428B2F006079FF /* IQInvocation.swift in Sources */,
+				CC717D1823428B2F006079FF /* IQUITextFieldView+Additions.swift in Sources */,
+				CC717D0B23428B2F006079FF /* IQPreviousNextView.swift in Sources */,
 				CC600D20233BD13300766F6D /* SceneDelegate.swift in Sources */,
+				CC717D1A23428B2F006079FF /* IQNSArray+Sort.swift in Sources */,
+				CCE0993F23418960002D4A13 /* SummaryViewController.swift in Sources */,
+				CC717D0E23428B2F006079FF /* IQToolbar.swift in Sources */,
+				CC9CCCD0233E48170075CE5C /* ResultsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +500,13 @@
 		};
 		CC600D2F233BD13500766F6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C65388357F997A73BB48A4C /* Pods-ChemistryQuiz.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-4";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UY3A446QTH;
 				INFOPLIST_FILE = ChemistryQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,17 +514,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZachPhelps.ChemistryQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CC600D30233BD13500766F6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6373913C2249FEBC29769EA4 /* Pods-ChemistryQuiz.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-4";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UY3A446QTH;
 				INFOPLIST_FILE = ChemistryQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +534,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZachPhelps.ChemistryQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
